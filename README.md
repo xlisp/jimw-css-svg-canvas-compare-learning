@@ -1,4 +1,4 @@
-# [Canvas与SVG与CSS画图对比](https://shanyue.tech/post/canvas-and-svg-shapes.html)
+# [Canvas与SVG与CSS画图对比学习](https://shanyue.tech/post/canvas-and-svg-shapes.html)
 
 ### 矩形
 ```css
