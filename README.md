@@ -1,5 +1,27 @@
 # [Canvas与SVG与CSS画图对比学习](https://shanyue.tech/post/canvas-and-svg-shapes.html)
 
+### 描边与填充
+```css
+;; 在 CSS 中是 border-color 以及 background-color 属性
+.rect {
+  border: 1px solid #fff;
+  background-color: #000;
+  width: 100px;
+  height: 100px;
+}
+```
+```html
+<!-- 在 SVG 中是 fill 和 stroke。可以直接作为 element 的属性 -->
+<rect width="100" height="100" fill="#fff" stroke="#000"></rect>
+```
+```js
+const canvas = document.getElementById('rect')
+const ctx = canvas.getContext('2d')
+ctx.fillStyle = '#000'
+ctx.strokeStyle = '#fff'
+ctx.fillRect(0, 0, 100, 100)
+ctx.fillRect(115, 0, 100, 100)
+```
 ### 矩形
 ```css
 .rect {
